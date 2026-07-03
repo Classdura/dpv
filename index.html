@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPV | 3D Artist Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="preloader" class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div id="canvas-container"></div>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">DPV <span>3D</span></a>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">Обо мне</a></li>
+                    <li><a href="#gallery" class="nav-link">Портфолио</a></li>
+                    <li><a href="#calculator" class="nav-link">Заказать</a></li>
+                    <li><a href="#terms" class="nav-link">Условия</a></li>
+                    <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                    <li><a href="#blog" class="nav-link">Блог</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="burger" id="burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <section class="hero-section" id="hero">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Привет, я DPV</h1>
+                <p>Создаю качественные 3D-модели для игр, печати и рендера</p>
+                <a href="#gallery" class="btn">Смотреть работы</a>
+            </div>
+        </section>
+
+        <section class="about-section id-pad" id="about" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">Обо мне</h2>
+                <div class="content-box">
+                    <p>Начинал 3D-моделирование в 2016 году самоучкой. Прошел путь от базовых примитивов до комплексных сцен и оптимизированных игровых моделей. До сих пор активно обучаюсь, осваиваю новые пайплайны и непрерывно наращиваю скил, чтобы выдавать результат топового уровня.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section id-pad" id="gallery" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">Портфолио</h2>
+                
+                <div class="tabs-container">
+                    <button class="tab-btn active" data-tab="all">Все</button>
+                    <button class="tab-btn" data-tab="schemas">Для схем</button>
+                    <button class="tab-btn" data-tab="print">Для печати / Печать</button>
+                    <button class="tab-btn" data-tab="games">Для игр</button>
+                    <button class="tab-btn" data-tab="render">Для рендера</button>
+                </div>
+
+                <div class="gallery-grid">
+                    
+                    <div class="gallery-card" data-category="schemas">
+                        <div class="card-img-wrap">
+                            <img src="images/placeholder.jpg" alt="Схематичная модель" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h3>Техническая Схема V-1</h3>
+                            <p class="card-desc">Точная детализированная модель узла для инженерных интеграций.</p>
+                            <div class="specs">
+                                <span>Софт: Cinema 4D, Blender</span>
+                                <span>Форматы: .obj, .fbx, .stl</span>
+                                <span>Размеры: 120x80x45 мм</span>
+                                <span>Стенки: 2 мм | Заполнение: 20%</span>
+                            </div>
+                            <a href="work-schema1.html" class="card-link">Открыть проект</a>
+                            <a href="#" class="download-btn" download>Скачать исходники бесплатно</a>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="print">
+                        <div class="card-img-wrap">
+                            <img src="images/placeholder.jpg" alt="Модель для печати" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h3>Миниатюра Кибер-Рыцарь</h3>
+                            <p class="card-desc">Готовая к FDM/SLA печати фигурка с высокой детализацией.</p>
+                            <div class="specs">
+                                <span>Софт: Blender, Substance Painter</span>
+                                <span>Материал: Фотополимер / PLA</span>
+                                <span>Размеры: 75 мм (высота)</span>
+                                <span>Стенки: 1.5 мм | Заполнение: 100%</span>
+                            </div>
+                            <a href="work-print1.html" class="card-link">Открыть проект</a>
+                            <a href="#" class="download-btn" download>Скачать .STL</a>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="games">
+                        <div class="card-img-wrap">
+                            <img src="images/placeholder.jpg" alt="Игровая модель" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h3>Sci-Fi Бластер (Low-Poly)</h3>
+                            <p class="card-desc">Игровой ассет, оптимизированный под Unreal Engine 5 / Unity.</p>
+                            <div class="specs">
+                                <span>Polycount: 8,500 трисов</span>
+                                <span>Текстуры: PBR (Albedo, Normal, Roughness, Metal, AO) - 4K</span>
+                                <span>Риггинг/Анимация: Есть (затвор, перезарядка)</span>
+                                <span>Софт: Blender, Substance Painter</span>
+                            </div>
+                            <a href="work-game1.html" class="card-link">Открыть проект</a>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="render">
+                        <div class="card-img-wrap">
+                            <img src="images/placeholder.jpg" alt="Рендер сцены" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h3>Футуристичный Интерьер 2026</h3>
+                            <p class="card-desc">Статичная Hi-End сцена интерьера с кинематографичным светом.</p>
+                            <div class="specs">
+                                <span>Разрешение: 4K (3840x2160) Static Render</span>
+                                <span>Движок: Octane Render / Cycles</span>
+                                <span>Софт: Cinema 4D, Blender</span>
+                            </div>
+                            <a href="work-render1.html" class="card-link">Открыть проект</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="order-section id-pad" id="calculator" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">Заказать работу и FAQ</h2>
+                
+                <div class="order-grid">
+                    <div class="calc-box content-box">
+                        <h3 style="margin-bottom: 20px;">Выберите тип заказа</h3>
+                        <div class="order-buttons-container" style="margin-top: 0;">
+                            <a href="#" class="order-action-btn">Заказать модель для личного пользования</a>
+                            <a href="#" class="order-action-btn">Заказать модель для печати</a>
+                            <a href="#" class="order-action-btn">Заказать модель для игр</a>
+                            <a href="#" class="order-action-btn">Распечатать модель на 3D принтере</a>
+                            <a href="#" class="order-action-btn">Заказать рендер</a>
+                        </div>
+                    </div>
+                    <div class="faq-box">
+                        <div class="faq-item">
+                            <div class="faq-question">В каком софте вы работаете?</div>
+                            <div class="faq-answer">Основной стек: Cinema 4D, Blender для моделирования и сцен, Substance Painter для текстурирования и запекания карт.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Входят ли исходники в стоимость игровых моделей?</div>
+                            <div class="faq-answer">Да, при заказе игровой модели вы получаете настроенный .fbx/.obj файл и архив со всеми PBR-текстурами в нужном разрешении.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="terms-section id-pad" id="terms" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">Условия работы</h2>
+                <div class="terms-grid">
+                    <div class="content-box">
+                        <h3>Пока не выявлены</h3>
+                        <p>Я еще только начинаю профессионально работать как 3д художник, выявлю их позже.</p>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <section class="reviews-section id-pad" id="reviews" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">Отзывы клиентов</h2>
+                <div class="reviews-grid">
+                    <div class="review-card content-box">
+                        <p class="review-text">"Успейте быть первыми"</p>
+                        <span class="review-author">— DPV</span>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <section class="blog-section id-pad" id="blog" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">Блог & Новости</h2>
+                <div class="blog-grid">
+                    <article class="blog-card content-box">
+                        <span class="blog-date">03 Июля, 2026</span>
+                        <h3>Открытие сайта</h3>
+                        <p>теперь есть возможность со мной связаться....</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section id-pad" id="contact" data-aos="fade-up">
+            <div class="container text-center">
+                <h2 class="section-title">Контакты</h2>
+                <p class="contact-desc">По вопросам сотрудничества и заказа моделей пишите напрямую на электронную почту:</p>
+                <a href="mailto:dpv.3dart@email.com" class="email-link">dpv.3dart@email.com</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 DPV. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Наверх">&#8593;</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
